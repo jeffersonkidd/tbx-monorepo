@@ -4,6 +4,16 @@ import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
+  // Served from https://jeffersonkidd.github.io/tbx-monorepo/ on GitHub Pages.
+  // This makes Vite emit correctly-prefixed asset URLs automatically.
+  base: '/tbx-monorepo/',
+
+  // Build straight into the folder GitHub Pages deploys from.
+  build: {
+    outDir: 'docs',
+    emptyOutDir: true,
+  },
+
   plugins: [
     // The React and Tailwind plugins are both required for Make, even if
     // Tailwind is not being actively used – do not remove them
