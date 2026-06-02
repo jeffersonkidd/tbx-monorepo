@@ -21,7 +21,7 @@ export function Linktree() {
           <div className="w-32 h-32 mb-6 relative group cursor-pointer">
             <div className="absolute inset-0 bg-black translate-x-2 translate-y-2"></div>
             <img 
-              src="https://github.com/jeffersonkidd/tbx-monorepo/blob/main/src/app/components/profile.jpeg"
+              src="./profile.jpeg"
               alt="Creator Profile"
               className="w-full h-full object-cover border-4 border-black relative z-10 filter grayscale contrast-125 group-hover:-translate-y-1 group-hover:-translate-x-1 transition-transform"
             />
@@ -32,7 +32,7 @@ export function Linktree() {
           </div>
           
           <h1 className="font-['Bebas_Neue'] text-5xl text-center leading-none tracking-wide bg-black text-white px-4 py-2 -rotate-2 inline-block">
-            @MONOFLY_CREATOR
+            @TIBBIE_X
           </h1>
           <p className="mt-4 font-bold text-center border-b-4 border-black pb-4 w-full">
             Art. Code. Chaos. Design System Overlord.
