@@ -4,13 +4,11 @@ import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  // Served from https://jeffersonkidd.github.io/tbx-monorepo/ on GitHub Pages.
-  // This makes Vite emit correctly-prefixed asset URLs automatically.
-  base: '/tbx-monorepo/',
+  // Served from the domain root on Vercel, so assets are emitted with '/' URLs.
+  base: '/',
 
-  // Build straight into the folder GitHub Pages deploys from.
   build: {
-    outDir: 'docs',
+    outDir: 'dist',
     emptyOutDir: true,
   },
 
