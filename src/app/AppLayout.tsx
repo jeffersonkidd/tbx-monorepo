@@ -16,7 +16,7 @@ export function AppLayout() {
   return (
     <div className="min-h-screen bg-white text-black font-['Space_Mono'] overflow-x-hidden selection:bg-black selection:text-white">
       {/* Shared Header for the Logo */}
-      <div className="fixed top-0 left-0 w-full z-50 p-4 pointer-events-none flex justify-between items-start">
+      <div className="fixed display-none top-0 left-0 w-full z-50 p-4 pointer-events-none flex justify-between items-start">
         <button 
           onClick={toggleView}
           className="pointer-events-auto group relative flex items-center gap-3 bg-black text-white px-4 py-3 border-4 border-black hover:bg-white hover:text-black transition-all active:translate-y-1 active:translate-x-1 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:shadow-none"
