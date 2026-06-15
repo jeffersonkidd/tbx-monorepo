@@ -3,13 +3,13 @@ import { Outlet, useNavigate, useLocation } from 'react-router';
 export function AppLayout() {
   const navigate = useNavigate();
   const location = useLocation();
-  const isDashboard = location.pathname === '/';
+  const isDashboard = location.pathname.endsWith('/dashboard');
 
   const toggleView = () => {
     if (isDashboard) {
-      navigate('/linktree');
-    } else {
       navigate('/');
+    } else {
+      navigate('/dashboard');
     }
   };
 

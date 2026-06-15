@@ -1,4 +1,5 @@
 import { Instagram, Twitter, Youtube, Github, Mail, ArrowRight } from 'lucide-react';
+import profilePic from '@/assets/profile.jpeg';
 
 const links = [
   { title: 'MY LATEST VIDEO: WHY BRUTALISM?', url: '#' },
@@ -21,7 +22,7 @@ export function Linktree() {
           <div className="w-32 h-32 mb-6 relative group cursor-pointer">
             <div className="absolute inset-0 bg-black translate-x-2 translate-y-2"></div>
             <img 
-              src="./profile.jpeg"
+              src={profilePic}
               alt="Creator Profile"
               className="w-full h-full object-cover border-4 border-black relative z-10 filter grayscale contrast-125 group-hover:-translate-y-1 group-hover:-translate-x-1 transition-transform"
             />

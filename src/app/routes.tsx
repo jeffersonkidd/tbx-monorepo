@@ -2,6 +2,14 @@ import { createBrowserRouter } from "react-router";
 import { AppLayout } from "./AppLayout";
 import { Dashboard } from "./components/Dashboard";
 import { Linktree } from "./components/Linktree";
+import { PasswordGate } from "./components/PasswordGate";
+
+// Only the dashboard is gated; the linkinbio (linktree) stays public.
+const GatedDashboard = () => (
+  <PasswordGate>
+    <Dashboard />
+  </PasswordGate>
+);
 
 export const router = createBrowserRouter(
   [
@@ -9,8 +17,10 @@ export const router = createBrowserRouter(
       path: "/",
       Component: AppLayout,
       children: [
-        { index: true, Component: Dashboard },
-        { path: "linktree", Component: Linktree },
+        // Public linkinbio at the root.
+        { index: true, Component: Linktree },
+        // Gated dashboard.
+        { path: "dashboard", Component: GatedDashboard },
       ],
     },
   ],
