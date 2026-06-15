@@ -14,7 +14,7 @@ export function AppLayout() {
   };
 
   return (
-    <div className="min-h-screen bg-white text-black font-['Space_Mono'] overflow-x-hidden selection:bg-black selection:text-white">
+    <div className="min-h-screen bg-yellow-500 bg-white text-black font-['Space_Mono'] overflow-x-hidden selection:bg-black selection:text-white">
       {/* Shared Header for the Logo */}
       <div className="fixed display-none top-0 left-0 w-full z-50 p-4 pointer-events-none flex justify-between items-start">
         <button 
